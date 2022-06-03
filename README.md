@@ -54,4 +54,7 @@ filter.set('data-value 3')
 -
 |Name|Data Type|Description|
 | --- | --- | --- |
-| placeholder | boolean | default: false<br/> set default value of dropdown box to be placeholder string or first option value|
+| placeholder | string | placeholder string or first option value |
+| multiple | boolean | multiple select or single select |
+| autoClose | boolean | Only applicable to multi-select, close dropdown box whenever a option is selected |
+| firstOptionReset | boolean | Only applicable to multi-select, de-select all option when first option is selected |
