@@ -2,8 +2,6 @@
 Merh-Select – no fuzz Vanilla JS dropdown select
 
 # Features:
--
-
 - Fully Customizable
 - Zero Dependencies, built with Vanilla Javascript
 - Accept images or icon
@@ -54,8 +52,6 @@ filter.set('data-value 3')
 ```
 
 # Options:
--
-
 |Name|Data Type|Description|
 | --- | --- | --- |
 | placeholder | string | placeholder string or first option value |
