@@ -24,7 +24,7 @@ Installation:
 <select id="merh-select"></select>
 ```
 
-4. Init
+4. Initialize
 ```javascript
 const filter = new merhSelect({
   selectorID: 'merh-select',
