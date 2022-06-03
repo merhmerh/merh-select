@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.ms_main {
+  width: 200px;
+}
+.ms_main .ms_select {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: inherit;
+  color: #333;
+  border-radius: 8px;
+  border: 2px solid #e4dede;
+  padding: 8px;
+  position: relative;
+  width: inherit;
+  padding-right: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.ms_main .ms_select:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='14.736' viewBox='0 0 24 14.736'%3E%3Cpath id='arrow' d='M2931.916-2842,2920-2853.916l2.821-2.82,9.18,9.16,9.18-9.16,2.82,2.82L2932.085-2842Z' transform='translate(-2920 2856.736)' fill='%23a9a9a9'/%3E%3C/svg%3E%0A");
+}
+.ms_main .ms_container {
+  z-index: 1;
+  position: absolute;
+  width: inherit;
+  margin-top: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #e4dede;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@supports (overflow-y: overlay) {
+  .ms_main .ms_container {
+    overflow-y: overlay;
+  }
+}
+.ms_main .ms_container .ms_list {
+  width: inherit;
+}
+.ms_main .ms_container .ms_list .ms_option {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+.ms_main .ms_container .ms_list .ms_option img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.ms_main .ms_container .ms_list .ms_option:hover {
+  background-color: #efeff1;
+}
+.ms_main .ms_container .ms_list .ms_option.multi-selected {
+  color: #4185f4;
+  font-weight: 600;
+  background-color: rgba(65, 133, 244, 0.1);
+}
