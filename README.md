@@ -3,6 +3,7 @@ Merh-Select – no fuzz Vanilla JS dropdown select
 
 # Features:
 -
+
 - Fully Customizable
 - Zero Dependencies, built with Vanilla Javascript
 - Accept images or icon
@@ -10,6 +11,7 @@ Merh-Select – no fuzz Vanilla JS dropdown select
 
 Installation:
 -
+
 1. Include Javascript
 ```javascript
 <script src="path/to/merhselect.js">
@@ -40,6 +42,7 @@ Example: your if option value is 'youtube-video', you can set the visible value 
 
 # Methods:
 -
+
 1. Get Selected Values: return data-value of selected option(s)
 ```javascript
 const selected = filter.selected()
@@ -52,6 +55,7 @@ filter.set('data-value 3')
 
 # Options:
 -
+
 |Name|Data Type|Description|
 | --- | --- | --- |
 | placeholder | string | placeholder string or first option value |
