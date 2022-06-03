@@ -38,6 +38,14 @@ Visible value, are values that are seen from client point of view.
 Data value, are values that will be referenced.
 Example: your if option value is 'youtube-video', you can set the visible value to 'yt-video' instead.
 
+# Options:
+|Name|Data-Type|Description|
+| --- | --- | --- |
+| placeholder | string | placeholder string or first option value |
+| multiple | boolean | multiple select or single select |
+| autoClose | boolean | Only applicable to multi-select, close dropdown box whenever a option is selected |
+| firstOptionReset | boolean | Only applicable to multi-select, de-select all option when first option is selected |
+
 # Methods:
 
 1. Get Selected Values: return data-value of selected option(s)
@@ -49,11 +57,3 @@ const selected = filter.selected()
 ```javascript
 filter.set('data-value 3')
 ```
-
-# Options:
-|Name|Data Type|Description|
-| --- | --- | --- |
-| placeholder | string | placeholder string or first option value |
-| multiple | boolean | multiple select or single select |
-| autoClose | boolean | Only applicable to multi-select, close dropdown box whenever a option is selected |
-| firstOptionReset | boolean | Only applicable to multi-select, de-select all option when first option is selected |
