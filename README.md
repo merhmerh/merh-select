@@ -39,7 +39,6 @@ Data value, are values that will be referenced.
 Example: your if option value is 'youtube-video', you can set the visible value to 'yt-video' instead.
 
 # Methods:
--
 
 1. Get Selected Values: return data-value of selected option(s)
 ```javascript
