@@ -33,6 +33,11 @@ const filter = new merhSelect({
     ['visible value 2', 'data-value 2', 'path/to/image'],
     ['visible value 3', 'data-value 3', 'path/to/image'],
   ],
+  
+const dropdown = document.getElementById(filter.selectorID)
+dropdown.addEventListener('updated', () => {
+    console.log(filter.selected())
+});
 ```
 Visible value, are values that are seen from client point of view. Data value, are values that will be referenced. <br/>
 Example: your if option value is 'youtube-video', you can set the visible value to 'yt-video' instead. <br/><br/>
