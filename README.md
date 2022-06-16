@@ -33,6 +33,7 @@ const filter = new merhSelect({
     ['visible value 2', 'data-value 2', 'path/to/image'],
     ['visible value 3', 'data-value 3', 'path/to/image'],
   ],
+});
   
 const dropdown = document.getElementById(filter.selectorID)
 dropdown.addEventListener('updated', () => {
